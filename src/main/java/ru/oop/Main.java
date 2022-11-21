@@ -22,6 +22,11 @@ public class Main {
      */
     public static void moveTo(Person person, Position destination) {
         // TODO
+        final PassengerTransport transport = new Car();
+
+        transport.takeClosest(person, destination);
+        person.walk(destination);
+
         assert person.getPosition() == destination;
     }
 }
