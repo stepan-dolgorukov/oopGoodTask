@@ -21,7 +21,7 @@ public class Main {
      * Переехать из текущего места в заданную точку
      */
     public static void moveTo(Person person, Position destination) {
-        // TODO
+
         final PassengerTransport transport = new Car();
 
         transport.takeClosest(person, destination);
