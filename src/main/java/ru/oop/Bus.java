@@ -3,7 +3,7 @@ package ru.oop;
 /**
  * Автобус.
  */
-public class Bus implements PassengerTransport, Positioned {
+public class Bus implements PassengerTransport {
     private Position position_;
     private String route_;
 
