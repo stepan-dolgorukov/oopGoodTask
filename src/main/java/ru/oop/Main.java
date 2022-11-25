@@ -39,7 +39,7 @@ public class Main {
      */
     public static void moveTo(Person person, Position destination) {
 
-        final PassengerTransport transport = new Bus();
+        final PassengerTransport transport = new Bus("48");
 
         person.walk(transport.getPosition());
         transport.takeClosest(person, destination);

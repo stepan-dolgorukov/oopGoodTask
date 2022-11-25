@@ -11,6 +11,9 @@ public class Bus implements PassengerTransport, Positioned {
 
     }
 
+    /**
+     * @param route наименование маршрута, по которому ходит автобус
+     */
     public Bus(String route) {
     }
 
@@ -31,7 +34,7 @@ public class Bus implements PassengerTransport, Positioned {
     }
 
     /**
-     * Получить название маршрута автобуса.
+     * Получить наименование маршрута автобуса.
      */
     public String getRoute() {
         return route_;
