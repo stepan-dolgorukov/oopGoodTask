@@ -6,11 +6,7 @@ package ru.oop;
 public interface PassengerTransport extends Transport {
 
     /**
-     * Довезти пассажира как можно ближе к пункту назначения.
-     * Нет гарантий, что после перевозки пассажир окажется точно в destination.
-     *
-     * @param passenger пассажир, которого требуется перевезти
-     * @param destination местоположение пункта назначения
+     * Довезти пассажира в ближайшее к точке назначения место, доступное для транспорта.
      */
     public void takeClosest(Person passenger, Position destination);
 }
