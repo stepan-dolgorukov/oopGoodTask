@@ -1,5 +1,8 @@
 package ru.oop;
 
+/**
+ * Легковой автомобиль.
+ */
 public class Car implements PassengerTransport, Positioned {
     private Position position;
 

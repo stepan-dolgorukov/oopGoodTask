@@ -40,7 +40,7 @@ public class Main {
      * на любом, заранее определённом транспорте
      */
     public static void moveTo(Person person, Position destination) {
-        // TODO
+
         var transports = List.of(new Car(), new Bus());
 
         person.walk(transports.get(0).getPosition());
