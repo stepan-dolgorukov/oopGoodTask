@@ -41,11 +41,12 @@ public class Main {
      */
     public static void moveTo(Person person, Position destination) {
 
-        var transports = List.of(new Car(), new Bus());
+        final var transports = List.of(new Car(), new Bus());
+        final var lastIndex = transports.size() - 1;
 
         person.walk(transports.get(0).getPosition());
 
-        for (int i = 0; i < transports.size() - 1; i++) {
+        for (int i = 0; i < lastIndex; i++) {
 
             final var nextVehicle = transports.get(i + 1);
             final var nextDestination = nextVehicle.getPosition();
@@ -54,7 +55,7 @@ public class Main {
             person.walk(nextDestination);
         }
 
-        transports.get(transports.size() - 1).takeClosest(person, destination);
+        transports.get(lastIndex).takeClosest(person, destination);
         person.walk(destination);
 
         assert person.getPosition() == destination;
