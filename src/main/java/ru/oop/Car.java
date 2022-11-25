@@ -3,7 +3,7 @@ package ru.oop;
 /**
  * Легковой автомобиль.
  */
-public class Car implements PassengerTransport, Positioned {
+public class Car implements PassengerTransport {
     private Position position;
 
     public void takeClosest(Person passenger, Position destination) {
