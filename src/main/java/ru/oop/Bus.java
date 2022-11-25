@@ -15,7 +15,7 @@ public class Bus implements PassengerTransport, Positioned {
     }
 
     /**
-     * Довезти пассажира до места назначения.
+     * Довезти пассажира на автобусе до места назначения.
      * Если маршрут не проходит через конечный пункт,
      * довезти до ближайшей к пункту остановки.
      */
@@ -24,21 +24,21 @@ public class Bus implements PassengerTransport, Positioned {
     }
 
     /**
-     * Получить текущее месторасположение.
+     * Получить текущее месторасположение автобуса.
      */
     public Position getPosition() {
         return position_;
     }
 
     /**
-     * Получить название маршрута.
+     * Получить название маршрута автобуса.
      */
     public String getRoute() {
         return route_;
     }
 
     /**
-     * Обновить месторасположение.
+     * Обновить месторасположение автобуса.
      */
     public void setPosition(Position position) {
 

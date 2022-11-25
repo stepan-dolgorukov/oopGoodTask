@@ -38,8 +38,8 @@ public class Main {
      * на любом, заранее определённом транспорте
      */
     public static void moveTo(Person person, Position destination) {
-        // TODO
-        PassengerTransport transport = new Bus();
+
+        final PassengerTransport transport = new Bus();
 
         person.walk(transport.getPosition());
         transport.takeClosest(person, destination);
