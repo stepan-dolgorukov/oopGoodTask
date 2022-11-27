@@ -22,7 +22,7 @@ public class Main {
      */
     public static void moveTo(Person person, Position destination) {
 
-        final var transport = new Car();
+        final PassengerTransport transport = new Car();
 
         transport.takeClosest(person, destination);
         person.walk(destination);
