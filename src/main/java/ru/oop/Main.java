@@ -41,7 +41,12 @@ public class Main {
      */
     public static void moveTo(Person person, Position destination) {
 
-        final var transports = List.of(new Car(), new Bus("routeN"));
+        final var transports = List.of(
+                new Car(),
+                new Bus("routeN"),
+                new CarpetPlane()
+        );
+
         final var lastIndex = transports.size() - 1;
 
         person.walk(transports.get(0).getPosition());

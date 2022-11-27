@@ -30,14 +30,14 @@ public class Bus implements PassengerTransport {
         return position_;
     }
 
+    public void setPosition(Position position) {
+
+    }
+
     /**
      * Получить наименование маршрута автобуса.
      */
     public String getRoute() {
         return route_;
-    }
-
-    public void setPosition(Position position) {
-
     }
 }

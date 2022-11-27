@@ -1,9 +1,10 @@
 package ru.oop;
 
 /**
- * Легковой автомобиль.
+ * Ковёр-самолёт.
  */
-public class Car implements PassengerTransport {
+public class CarpetPlane implements PassengerTransport {
+
     private Position position_;
 
     public void takeClosest(Person passenger, Position destination) {
