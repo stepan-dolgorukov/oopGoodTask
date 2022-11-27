@@ -26,9 +26,6 @@ public class Bus implements PassengerTransport {
 
     }
 
-    /**
-     * Получить текущее месторасположение автобуса.
-     */
     public Position getPosition() {
         return position_;
     }
@@ -40,9 +37,6 @@ public class Bus implements PassengerTransport {
         return route_;
     }
 
-    /**
-     * Обновить месторасположение автобуса.
-     */
     public void setPosition(Position position) {
 
     }
