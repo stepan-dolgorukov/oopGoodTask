@@ -1,9 +1,6 @@
 package ru.oop;
 
-/**
- * Легковой автомобиль.
- */
-public class Car implements PassengerTransport {
+public class Boat implements PassengerTransport {
     private Position position_;
 
     public void takeClosest(Person passenger, Position destination) {
